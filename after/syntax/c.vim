@@ -1,4 +1,4 @@
-if exists("b:kernel_mode_loaded")
+if !exists("g:kernel_mode") || !g:kernel_mode || exists("b:kernel_mode_loaded")
     finish
 endif
 
