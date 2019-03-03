@@ -1,0 +1,1 @@
+command! KernelOn call LoadKernelConf()
