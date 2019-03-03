@@ -1,1 +1,1 @@
-command! KernelOn call LoadKernelConf()
+command! KernelOn call kernel#LoadKernelConf()
