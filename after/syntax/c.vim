@@ -1,6 +1,4 @@
-if !exists("g:kernel_mode")
-    finish
-elseif exists("g:kernel_mode_done")
+if exists("b:kernel_mode_loaded")
     finish
 endif
 
@@ -104,4 +102,4 @@ syn match cFormat "%pNF"
 
 " }}}
 
-let g:kernel_mode_done = "true"
+let b:kernel_mode_loaded = "true"
