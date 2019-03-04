@@ -22,8 +22,8 @@ syn keyword Constant KERN_NOTICE KERN_INFO KERN_DEBUG
 syn keyword Function printk
 
 " pr_debug, etc.
-syn keyword Function pr_emerg pr_alert pr_crit pr_err pr_warning pr_notice
-syn keyword Function pr_info pr_debug
+syn keyword Function pr_emerg pr_alert pr_crit pr_err pr_warning pr_warn
+syn keyword Function pr_notice pr_info pr_debug
 
 " dev_dbg, etc.
 syn keyword Function dev_emerg dev_alert dev_crit dev_err dev_warn
