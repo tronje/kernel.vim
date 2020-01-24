@@ -32,8 +32,7 @@ syn keyword Function dev_emerg dev_alert dev_crit dev_err dev_warn
 syn keyword Function dev_notice dev_info dev_dbg
 
 " alloc functions
-" this matches any lower case char followed by 'alloc' for now.
-syn match Function "\l*alloc"
+syn match Function "\l\+_\?\l\+alloc"
 
 " }}}
 
