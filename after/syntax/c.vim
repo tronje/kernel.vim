@@ -14,6 +14,8 @@ syn keyword Type s8 s16 s32 s64
 
 " macros and functions {{{
 
+syn keyword Constant jiffies
+
 " debug levels
 syn keyword Constant KERN_EMERG KERN_ALERT KERN_CRIT KERN_ERR KERN_WARNING
 syn keyword Constant KERN_NOTICE KERN_INFO KERN_DEBUG
