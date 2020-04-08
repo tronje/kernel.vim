@@ -9,12 +9,20 @@ function! s:TurnKernelModeOn()
         call ale#toggle#Disable()
         call ale#toggle#Enable()
     endif
+
     syntax off
     syntax on
 endfunction
 
 function! s:TurnKernelModeOff()
     let g:kernel_mode=0
+
+    if g:ale_enabled
+        let g:ale_c_gcc_options = ""
+        call ale#toggle#Disable()
+        call ale#toggle#Enable()
+    endif
+
     syntax off
     syntax on
 endfunction
