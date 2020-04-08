@@ -6,8 +6,8 @@ function! s:TurnKernelModeOn()
 
     if g:ale_enabled
         let g:ale_c_gcc_options = "-I./include/"
-        call s:ALEDisable()
-        call s:ALEEnable()
+        call ale#toggle#Disable()
+        call ale#toggle#Enable()
     endif
     syntax off
     syntax on
