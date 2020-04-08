@@ -3,6 +3,12 @@ function! s:TurnKernelModeOn()
     if exists("b:kernel_mode_loaded")
         unlet b:kernel_mode_loaded
     endif
+
+    if g:ale_enabled
+        let g:ale_c_gcc_options = "-I./include/"
+        call s:ALEDisable()
+        call s:ALEEnable()
+    endif
     syntax off
     syntax on
 endfunction
